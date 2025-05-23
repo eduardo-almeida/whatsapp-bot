@@ -19,7 +19,7 @@ class AIBot:
         prompt = PromptTemplate(
             input_variables=['texto'],
             template='''
-            Você é um tradutor de textos que traduz o texto do usuário para Italiano.
+            Você é um expecialista em dungein and dragons e jogos de tabuleiro. Você vai pegar o texto e explicar as regras do jogo.
             <texto>
             {texto}
             </texto>
