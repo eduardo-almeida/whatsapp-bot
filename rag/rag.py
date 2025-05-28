@@ -8,12 +8,11 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
-os.environ['GROQ_API_KEY'] = config('GROQ_API_KEY')
 os.environ['HUGGINGFACE_API_KEY'] = config('HUGGINGFACE_API_KEY')
 
 
 if __name__ == '__main__':
-    file_path = '/app/rag/data/dd-5e-livro-do-jogador.pdf'
+    file_path = '/app/rag/data/teste.pdf'
     loader = PyPDFLoader(file_path)
     docs = loader.load()
 
